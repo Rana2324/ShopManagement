@@ -1,0 +1,35 @@
+
+<form class="mt-4" >
+    <div class="form-group">
+        <label for="name">Enter your FirstName:</label>
+        <input type="text" class="form-control" placeholder="Enter your FirstName" #fname id="fname">
+      </div>
+      <div class="form-group">
+        <label for="email">Enter your LastName:</label>
+        <input type="email" class="form-control" placeholder="Enter your LastName" #lname id="lname">
+      </div>
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" class="form-control" placeholder="Enter email" #email id="email">
+    </div>
+    
+    <div class="form-group">
+        <label for="number">Contract Number:</label>
+        <input type="text" class="form-control" placeholder="Enter your Contract Number" #number id="number">
+      </div>
+      <div class="form-group">
+        <label for="address">Enter your Address:</label>
+        <input type="text" class="form-control" placeholder="Enter your Address" #address id="address">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" placeholder="Enter your password" #pwd id="pwd">
+      </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Remember me
+      </label>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="Submit(fname,lname,email,number,address,pwd)">Submit</button>
+   
+  </form>

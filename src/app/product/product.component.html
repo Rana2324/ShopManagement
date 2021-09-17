@@ -1,1 +1,46 @@
-<p>product works!</p>
+<div class="p-4">
+    Welcome to product componet
+<br><br>
+<label for="id">id</label>
+<input type="text" value="1" id="id" #id >
+
+<br>
+<label for="name">name</label>
+<input type="text" value="Laptop" id="name" #name >
+<br>
+
+<label for="price">price</label>
+<input type="text" value="324" id="price" #price >
+<br>
+<br>
+
+<button class="btn btn-success" (click)="add(id,name,price)">Add</button>
+
+<br>
+<button class="btn btn-success" (click)="fetchData()">FetchData</button>
+
+</div>
+
+<div>
+    <table class="table table-boder">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th> Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+  
+            <tr *ngFor="let item of products;index as i">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+                <td><button (click)="delete(i)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

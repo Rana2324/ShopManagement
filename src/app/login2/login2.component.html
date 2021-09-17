@@ -1,0 +1,14 @@
+
+<form >
+    <div class="form-group">
+      <label for="contract">Enter Your Contract:</label>
+      <input type="text" class="form-control" autocomplete="off" placeholder="Enter Your Contract" #contract id="contract">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" autocomplete="off" class="form-control" placeholder="Enter password" #pwd id="pwd">
+    </div>
+    
+    <button type="button" class="btn btn-primary" (click)="profile(contract,pwd)">Login</button>
+  </form>
+
